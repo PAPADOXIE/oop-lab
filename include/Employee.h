@@ -7,6 +7,5 @@ public:
     Employee();
     int get_id();
     int get_cabin();
-    bool assign_cabin(int cab);
-    void take_cabin();
+    bool set_cabin(int cab);
 };
