@@ -8,10 +8,10 @@ Employee::Employee(){
 void Employee::set_cabin(int cab){
     cabin_no=cab;
 }
-int get_id(){
+int Employee::get_id() const{
     return id;
 }
-int get_cabin(){
+int Employee::get_cabin() const{
     return cabin_no;
 }
 

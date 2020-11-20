@@ -1,19 +1,21 @@
-#include <../include/EmployeeList.h>
+#include "../include/EmployeeList.h"
+#include <cstdlib>
+
 EmployeeList::EmployeeList(){
     size=0;
     List=(Employee**)malloc(size*sizeof(Employee*));
 }
-EmployeeList EmployeeList::operator +(Employee *x){
-    size++;(Employee**)realloc(List,size*sizeof(Employee*);
-    List(size-1)=x;
-    return *this;
+void EmployeeList::operator +(Employee *x){
+    size++;
+    List = (Employee**) realloc (List,size*sizeof(Employee*));
+    List[size-1]=x;
 }
-EmployeeList EmployeeList::operator - (int x){
+
+void EmployeeList::operator - (int x){
     for(int i=0;i<size;i++){
         if(x==List[i]->get_id()){
             free(List[i]);
             List[i]=NULL;
         }
     }
-    return *this;
 }

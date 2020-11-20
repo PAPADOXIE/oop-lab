@@ -10,7 +10,7 @@ Cabin::Cabin(){
 }
 
 void Cabin::operator + (Employee *employee){
-    if(employee->get_cabin() = -1){
+    if(employee->get_cabin() == -1){
         employee->set_cabin(cabinNo);
         this->employee = employee;
     }else{

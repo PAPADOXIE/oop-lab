@@ -5,7 +5,7 @@ class Employee{
     int cabin_no;
 public:
     Employee();
-    int get_id();
-    int get_cabin();
-    bool set_cabin(int cab);
+    int get_id() const;
+    int get_cabin() const;
+    void set_cabin(int cab);
 };
