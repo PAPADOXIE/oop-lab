@@ -10,7 +10,8 @@ class Cabin{
     
     public:
     Cabin(); //Default Constructor
-    Cabin(Employee *employee); //Constructor which assigns employee as well
+    void operator + (Employee *employee); //Assign a cabin to an employee
+    void operator -- (); //Removes employee from cabin
     int get() const; //Returns cabinNo
 
     ~Cabin(); //Destructor
