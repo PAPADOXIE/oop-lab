@@ -2,9 +2,9 @@
 #include <../include/Employee.h>
 class EmployeeList(){
     Employee **List;
-    int max_size;
-    int currentsize;
+    int size;
+    public:
     EmployeeList();
-    void add_Employee(Employee);
-    void remove_Employee();
+    void operator + (Employee &x);
+    void operator - (Employee &x);
 }
