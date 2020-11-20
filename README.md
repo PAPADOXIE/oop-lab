@@ -2,11 +2,11 @@
 
 ## Compilation Instructions
 ### Run compile.sh on any Linux Distribution
-```bash
+``` bash
     sh compile.sh
 ```
 ### OR
-```bash
+``` bash
     sudo chmod +x compile.sh
     ./compile.sh
 ```
