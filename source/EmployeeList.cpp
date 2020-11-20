@@ -1,6 +1,6 @@
 #include "../include/EmployeeList.h"
 #include <cstdlib>
-
+#include <iostream>
 EmployeeList::EmployeeList(){
     size=0;
     List=(Employee**)malloc(size*sizeof(Employee*));
@@ -26,4 +26,7 @@ void EmployeeList::operator - (int x){
             List[i]=NULL;
         }
     }
+}
+void EmployeeList::print(int x){
+    std::cout<<List[x]->get_id();
 }

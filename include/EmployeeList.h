@@ -10,4 +10,5 @@ class EmployeeList{
     EmployeeList();
     EmployeeList operator + (Employee *x);
     void operator - (int x);
+    void print(int x);
 };
