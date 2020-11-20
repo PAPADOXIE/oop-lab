@@ -5,15 +5,18 @@ EmployeeList::EmployeeList(){
     size=0;
     List=(Employee**)malloc(size*sizeof(Employee*));
 }
-void EmployeeList::operator +(Employee *x){
+
+EmployeeList EmployeeList::operator +(Employee *x){
     for(int i = 0; i < size; i++){
         if(List[i] == NULL){
             List[i] = x;
+            return *this;
         }
     }
     size++;
     List = (Employee**) realloc (List,size*sizeof(Employee*));
     List[size-1]=x;
+    return *this;
 }
 
 void EmployeeList::operator - (int x){

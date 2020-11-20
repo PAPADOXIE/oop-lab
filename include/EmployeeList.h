@@ -8,6 +8,6 @@ class EmployeeList{
 
     public:
     EmployeeList();
-    void operator + (Employee *x);
+    EmployeeList operator + (Employee *x);
     void operator - (int x);
 };
