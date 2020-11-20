@@ -1,6 +1,6 @@
 # OOP Lab
 
-##Compilation Instructions
+## Compilation Instructions
 ### Run compile.sh on any Linux Distribution
 ```
     sh compile.sh
