@@ -5,9 +5,13 @@ class CabinList{
     
     private:
     int size;
-    Cabin *cabin_list;
+    Cabin **List; //List of Cabins
 
     public:
     CabinList();
-    CabinList operator + (Cabin &cabin);
+    CabinList operator + (Cabin *cabin);
+    void remove(int cabinNo);
+
+    ~CabinList(); //Destructor
+
 };

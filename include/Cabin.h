@@ -11,6 +11,7 @@ class Cabin{
     public:
     Cabin(); //Default Constructor
     Cabin(Employee *employee); //Constructor which assigns employee as well
+    int get() const; //Returns cabinNo
 
     ~Cabin(); //Destructor
 

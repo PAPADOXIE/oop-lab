@@ -12,6 +12,10 @@ Cabin::Cabin(Employee *employee){
     this->employee = employee;
 }
 
+int Cabin::get() const{
+    return cabinNo;
+}
+
 Cabin::~Cabin(){
     noOfCabins--;
 }
